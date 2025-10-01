@@ -1,0 +1,118 @@
+.camera-animator {
+  background: #2d2d2d;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.animator-header {
+  padding: 12px 15px;
+  background: #3d3d3d;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+.animator-header:focus {
+  outline: 2px solid #007acc;
+}
+
+.animator-header h4 {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+
+.animator-content {
+  padding: 15px;
+}
+
+.camera-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.camera-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #aaa;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.camera-checkbox:hover {
+  background: #3d3d3d;
+}
+
+.start-animation-button {
+  width: 100%;
+  padding: 12px;
+  background: #007acc;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.start-animation-button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.start-animation-button:hover:not(:disabled) {
+  background: #0088dd;
+}
+
+.animation-controls {
+  text-align: center;
+}
+
+.animation-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  color: #4caf50;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  background: #4caf50;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.stop-animation-button {
+  padding: 10px 20px;
+  background: #d32f2f;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.stop-animation-button:hover {
+  background: #e53935;
+}

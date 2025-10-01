@@ -1,0 +1,148 @@
+.advanced-camera-controls {
+  background: #2d2d2d;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.controls-header {
+  padding: 12px 15px;
+  background: #3d3d3d;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+.controls-header:focus {
+  outline: 2px solid #007acc;
+}
+
+.controls-header h4 {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+
+.expand-icon {
+  transition: transform 0.2s;
+  color: #ccc;
+}
+
+.expand-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.controls-content {
+  padding: 15px;
+}
+
+.control-group {
+  margin-bottom: 20px;
+}
+
+.control-group:last-child {
+  margin-bottom: 0;
+}
+
+.group-label {
+  display: block;
+  color: #ccc;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.vector-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.vector-control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vector-control label {
+  color: #aaa;
+  font-size: 11px;
+  text-align: center;
+}
+
+.vector-control input {
+  padding: 6px;
+  background: #3d3d3d;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.setting-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.setting-control label {
+  color: #aaa;
+  font-size: 12px;
+  min-width: 80px;
+}
+
+.setting-control input[type="range"] {
+  flex: 1;
+}
+
+.setting-control input[type="number"] {
+  width: 60px;
+  padding: 4px;
+  background: #3d3d3d;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+}
+
+.setting-control input[type="color"] {
+  width: 40px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-control label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #aaa;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.preset-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.preset-button {
+  padding: 8px;
+  background: #007acc;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 11px;
+  transition: background 0.2s;
+}
+
+.preset-button:hover {
+  background: #0088dd;
+}

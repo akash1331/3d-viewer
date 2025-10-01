@@ -1,0 +1,32 @@
+.object-loader-file-input {
+  display: none;
+}
+
+.object-loader-button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.object-loader-button-primary {
+  background: #007acc;
+}
+
+.object-loader-button-secondary {
+  background: #555;
+}
+
+.object-loader-button:hover {
+  opacity: 0.9;
+}
+
+.object-loader-info {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+  text-align: center;
+}
